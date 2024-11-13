@@ -1,4 +1,4 @@
-import contactus from "../assets/images/contactus.png";
+import contactus from "../public/assets/images/contactus.png";
 const ContactUs = () => {
   return (
     <section className="bg-gradient-to-b from-green-50 to-white py-20 px-8">
