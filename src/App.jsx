@@ -6,7 +6,7 @@ import "./index.css";
 import NavBarComponent from "../components/Navbar";
 import HomePage from "../pages/Home";
 import ServicesPage from "../pages/Services";
-import Footer from "../components/footer";
+import Footer from "../components/Footer";
 import AboutUsPage from "../pages/About";
 import ContactUs from "../components/ContactForm";
 
