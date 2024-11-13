@@ -1,12 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import { motion } from "framer-motion";
 import { ReactTyped } from "react-typed";
-import { useState, useEffect } from "react";
 import man1 from "../public/assets/images/heroSection1.jpg";
-import man2 from "../public/assets/images/heroSection2.jpg";
-import man3 from "../public/assets/images/heroSection3.jpg";
-import man4 from "../public/assets/images/heroSection4.jpg";
-
 
 const sentences = [
   "Comprehensive Debt Collection Services Tailored to Your Needs",
@@ -17,24 +12,6 @@ const sentences = [
 ];
 
 const HeroSection = () => {
-  const [imageIndex, setImageIndex] = useState(0);
-
-  
-const images = [man1, man2, man3, man4];
-
-useEffect(() => {
-  images.forEach((image) => {
-    const img = new Image();
-    img.src = image;
-  });
-}, []);
-
-
-  const handleStringTyped = () => {
-  
-    setImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-  };
-
   return (
     <motion.section
       className="bg-gray-100 flex flex-col md:flex-row items-center justify-between px-8 py-12 md:py-24"
@@ -66,7 +43,6 @@ useEffect(() => {
             backSpeed={30}
             backDelay={2000}
             loop
-            onStringTyped={handleStringTyped} 
           />
         </h1>
         <p className="text-gray-700 mb-6 leading-relaxed">
@@ -77,17 +53,15 @@ useEffect(() => {
         </a>
       </motion.div>
 
-      {/* Right Section with Dynamic Image */}
+      {/* Right Section with Static Image */}
       <div className="w-full md:w-1/2 flex items-center justify-center">
         <motion.div
-          key={imageIndex} 
           className="relative w-4/5 h-64 md:h-80 lg:h-96 rounded-lg overflow-hidden shadow-lg"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <img src={images[imageIndex]} alt="Service Image" className="w-full h-full object-cover" />
+          <img src={man1} alt="Service Image" className="w-full h-full object-cover" />
         </motion.div>
       </div>
     </motion.section>
