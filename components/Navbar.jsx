@@ -2,6 +2,7 @@ import { useState } from "react";
 
 const NavBarComponent = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   return (
     <nav className="bg-white shadow-md z-50 relative">
@@ -81,36 +82,73 @@ const NavBarComponent = () => {
       {isOpen && (
         <div className="lg:hidden px-6 pt-4 pb-2 space-y-2">
           <a
-            href="#"
+            href="/"
             className="block text-gray-700 font-semibold hover:text-white hover:bg-green-600 px-3 py-2 rounded-md transition duration-200"
           >
             Home
           </a>
           <a
-            href="#"
+            href="/aboutus"
             className="block text-gray-700 font-medium hover:text-white hover:bg-green-600 px-3 py-2 rounded-md transition duration-200"
           >
             About Us
           </a>
           <div className="block">
-            <button className="flex items-center w-full text-left text-gray-700 font-medium hover:text-white hover:bg-green-600 px-3 py-2 rounded-md transition duration-200 focus:outline-none">
+            <button
+              className="flex items-center w-full text-left text-gray-700 font-medium hover:text-white hover:bg-green-600 px-3 py-2 rounded-md transition duration-200 focus:outline-none"
+              onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+            >
               Services
               <svg className="ml-1 h-4 w-4 fill-current" viewBox="0 0 20 20">
                 <path d="M5.23 7.21l4.27 4.27c.3.3.77.3 1.06 0l4.27-4.27a.75.75 0 10-1.06-1.06L10 9.15 6.29 6.15a.75.75 0 00-1.06 1.06z" />
               </svg>
             </button>
+            {isDropdownOpen && (
+              <div className="pl-6">
+                <a
+                  href="/services"
+                  className="block text-gray-700 font-medium hover:text-white hover:bg-green-600 px-3 py-2 rounded-md transition duration-200"
+                >
+                  Debt Collection
+                </a>
+                <a
+                  href="/services"
+                  className="block text-gray-700 font-medium hover:text-white hover:bg-green-600 px-3 py-2 rounded-md transition duration-200"
+                >
+                  Dues Collection for Companies
+                </a>
+                <a
+                  href="/services"
+                  className="block text-gray-700 font-medium hover:text-white hover:bg-green-600 px-3 py-2 rounded-md transition duration-200"
+                >
+                  Pre-Legal Debt Recovery
+                </a>
+                <a
+                  href="/services"
+                  className="block text-gray-700 font-medium hover:text-white hover:bg-green-600 px-3 py-2 rounded-md transition duration-200"
+                >
+                  Legal Collections
+                </a>
+                <a
+                  href="/services"
+                  className="block text-gray-700 font-medium hover:text-white hover:bg-green-600 px-3 py-2 rounded-md transition duration-200"
+                >
+                  Cheque Bounce Case Handling
+                </a>
+                <a
+                  href="/services"
+                  className="block text-gray-700 font-medium hover:text-white hover:bg-green-600 px-3 py-2 rounded-md transition duration-200"
+                >
+                  Debt Management Solutions
+                </a>
+              </div>
+            )}
           </div>
           <a
-            href="#"
-            className="block text-gray-700 font-medium hover:text-white hover:bg-green-600 px-3 py-2 rounded-md transition duration-200"
-          >
-            Contact Us
-          </a>
-          <a
-            href="#"
+            href="/contactus"
             className="block border border-green-700 text-green-700 px-4 py-2 rounded-md font-medium hover:bg-green-700 hover:text-white transition duration-200"
           >
-            Simulation
+            Contact Us
           </a>
         </div>
       )}

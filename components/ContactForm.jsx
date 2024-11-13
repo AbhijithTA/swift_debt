@@ -1,10 +1,10 @@
-import contactus from "../public/assets/images/contactUs.jpg"; // replace with an actual image path
+// replace with an actual image path
 
 const ContactUs = () => {
   return (
     <section className="bg-gradient-to-b from-green-50 to-white py-20 px-8">
       <div className="max-w-5xl mx-auto text-center mb-16">
-        <h1 className="text-5xl font-bold text-green-700 mb-4">Contact Us</h1>
+        <h1 className="md:text-5xl text-3xl  font-bold text-green-700 mb-4">Contact Us</h1>
         <p className="text-lg text-gray-700 leading-relaxed mb-6">
           At{" "}
           <span className="font-semibold text-green-700">
@@ -22,9 +22,9 @@ const ContactUs = () => {
         <div className="bg-white shadow-lg rounded-lg overflow-hidden border border-gray-200 flex flex-col items-center p-8">
           <div className="w-full mb-6">
             <img
-              src={contactus}
+              src="public\assets\images\contactus.svg"
               alt="Swift Debt Collection Office"
-              className="w-full h-64 object-cover rounded-lg shadow-md"
+              className="w-full h-64 object-contain rounded-lg shadow-md"
             />
           </div>
           <h2 className="text-3xl font-semibold text-green-800 mb-4 text-center">

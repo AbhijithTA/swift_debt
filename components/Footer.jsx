@@ -97,7 +97,7 @@ const Footer = () => {
                 <FaEnvelope className="mr-2" />
                 <a
                   href="mailto:support@swiftdebtcollection.com"
-                  className="hover:text-yellow-400"
+                  className="hover:text-yellow-400 break-all"
                 >
                   support@swiftdebtcollection.com
                 </a>

@@ -1,10 +1,3 @@
-// AboutUs.jsx
-
-import React from "react";
-import mission from "../public/assets/images/ourMission.jpg";
-import vision from "../public/assets/images/ourVision.jpg";
-import serviceExcellence from "../public/assets/images/serviceExcellence.jpg";
-import ethical from "../public/assets/images/ethical.jpg";
 import solution from "../public/assets/images/solutions.jpg";
 import values from "../public/assets/images/ourValues.jpg";
 
@@ -29,7 +22,7 @@ const AboutUsComponent = () => {
       <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
         <div className="bg-white shadow-lg rounded-lg border border-gray-200 overflow-hidden">
           <div className="h-48 w-full overflow-hidden">
-            <img src={mission} alt="Mission" className="w-full h-full object-contain" />
+            <img src="public\assets\images\ourMission.svg" alt="Mission" className="w-full h-full object-contain" />
           </div>
           <div className="p-6 text-center">
             <h2 className="text-3xl font-semibold text-green-800 mb-4">
@@ -46,7 +39,7 @@ const AboutUsComponent = () => {
 
         <div className="bg-white shadow-lg rounded-lg border border-gray-200 overflow-hidden">
           <div className="h-48 w-full overflow-hidden">
-            <img src={vision} alt="Vision" className="w-full h-full object-contain" />
+            <img src="public\assets\images\ourVision.svg" alt="Vision" className="w-full h-full object-contain" />
           </div>
           <div className="p-6 text-center">
             <h2 className="text-3xl font-semibold text-green-800 mb-4">
@@ -70,7 +63,7 @@ const AboutUsComponent = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="bg-green-100 shadow-lg rounded-lg p-6">
             <div className="h-32 w-full overflow-hidden mb-4">
-              <img src={serviceExcellence} alt="Service Excellence" className="w-full h-full object-contain" />
+              <img src="public\assets\images\serviceExcellence.svg" alt="Service Excellence" className="w-full h-full object-contain" />
             </div>
             <h3 className="text-2xl font-semibold text-green-800 mb-3">
               Service Excellence
@@ -84,7 +77,7 @@ const AboutUsComponent = () => {
 
           <div className=" shadow-lg rounded-lg p-6">
             <div className="h-32 w-full overflow-hidden mb-4">
-              <img src={ethical} alt="Ethical Practices" className="w-full h-full object-contain" />
+              <img src="public\assets\images\ethicalPractises.svg" alt="Ethical Practices" className="w-full h-full object-contain" />
             </div>
             <h3 className="text-2xl font-semibold text-green-800 mb-3">
               Ethical Practices

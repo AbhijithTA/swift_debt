@@ -1,6 +1,4 @@
 /* eslint-disable react/no-unescaped-entities */
-import { motion } from "framer-motion";
-import grp from "../public/assets/images/CustomerService_grp.jpg";
 
 const CustomerService = () => {
   return (
@@ -26,7 +24,8 @@ const CustomerService = () => {
 
       <div className="w-full md:w-1/2 relative">
         <img
-          src={grp}
+          // src={grp}
+          src="public\assets\images\CustomerService_grp.svg"
           alt="Customer Service Team"
           className="rounded-lg shadow-lg w-full h-auto object-cover"
         />

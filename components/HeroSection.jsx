@@ -66,7 +66,7 @@ useEffect(() => {
             backSpeed={30}
             backDelay={2000}
             loop
-            onStringTyped={handleStringTyped} // Callback to change the image
+            onStringTyped={handleStringTyped} 
           />
         </h1>
         <p className="text-gray-700 mb-6 leading-relaxed">
@@ -80,7 +80,7 @@ useEffect(() => {
       {/* Right Section with Dynamic Image */}
       <div className="w-full md:w-1/2 flex items-center justify-center">
         <motion.div
-          key={imageIndex} // Unique key to trigger animation
+          key={imageIndex} 
           className="relative w-4/5 h-64 md:h-80 lg:h-96 rounded-lg overflow-hidden shadow-lg"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
