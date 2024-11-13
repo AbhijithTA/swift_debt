@@ -1,4 +1,9 @@
-import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  useLocation,
+} from "react-router-dom";
 import { useState, useEffect } from "react";
 import Loader from "../components/Loader";
 
@@ -31,16 +36,15 @@ function App() {
         <Loader />
       ) : (
         <>
-          <NavBarComponent /> {/* Only show NavBar when loading is false */}
-          
+          <NavBarComponent />
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/services" element={<ServicesPage />} />
             <Route path="/aboutus" element={<AboutUsPage />} />
             <Route path="/contactus" element={<ContactUs />} />
           </Routes>
-          
-          <Footer /> 
+
+          <Footer />
         </>
       )}
     </Router>

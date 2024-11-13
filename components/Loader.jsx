@@ -1,10 +1,13 @@
-// src/components/Loader.js
-import React from 'react';
-
 const Loader = () => {
   return (
-    <div className="fixed inset-0 flex items-center justify-center bg-white bg-opacity-80 z-50">
-      <div className="w-12 h-12 border-4 border-blue-500 border-solid border-t-transparent rounded-full animate-spin"></div>
+    <div className="fixed inset-0 flex items-center justify-center bg-white bg-opacity-90 z-50">
+      <div className="relative w-16 h-16">
+        {/* Outer Ring */}
+        <div className="absolute inset-0 w-full h-full border-4 border-gray-300 rounded-full animate-spin-slow border-t-transparent"></div>
+        
+        {/* Inner Ring */}
+        <div className="absolute inset-2 w-3/4 h-3/4 border-4 border-blue-500 rounded-full animate-spin border-b-transparent"></div>
+      </div>
     </div>
   );
 };
