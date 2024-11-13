@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import { motion } from "framer-motion";
 import { ReactTyped } from "react-typed";
-import man1 from "../public/assets/images/heroSection1.jpg";
+import man1 from "../public/assets/images/heroSection.jpg";
 
 const sentences = [
   "Comprehensive Debt Collection Services Tailored to Your Needs",
@@ -14,7 +14,7 @@ const sentences = [
 const HeroSection = () => {
   return (
     <motion.section
-      className="bg-gray-100 flex flex-col md:flex-row items-center justify-between px-8 py-12 md:py-24"
+      className="bg-gray-100 md:h-screen flex flex-col md:flex-row items-center justify-between px-8 py-12 md:py-24"
       initial="hidden"
       animate="visible"
       variants={{

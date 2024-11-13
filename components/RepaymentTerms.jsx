@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { FaWallet } from "react-icons/fa"; // Wallet icon for feature points
 
 // Import image (replace with actual path)
+import repayment from "../public/assets/images/RepaymentTerms.jpg";
 
 
 const RepaymentTerms = () => {
@@ -10,13 +11,13 @@ const RepaymentTerms = () => {
       {/* Left Section with Image */}
       <div className="w-full md:w-1/2 flex flex-col items-center">
         <img
-          src="public\assets\images\RepaymentTerms.svg"
+          src={repayment}
           alt="Flexible Repayment"
           className="rounded-lg shadow-lg object-cover w-full"
         />
       </div>
 
-      {/* Right Section with Content */}
+      
       <div className="w-full md:w-1/2 space-y-6">
         {/* Heading */}
         <h2 className="text-green-700 uppercase font-semibold text-sm">
