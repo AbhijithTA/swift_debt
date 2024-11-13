@@ -1,9 +1,10 @@
 import { motion } from "framer-motion";
 import { FaWallet } from "react-icons/fa"; // Wallet icon for feature points
 
-// Import image (replace with actual path)
-import repayment from "../public/assets/images/RepaymentTerms.jpg";
-
+// Import images
+import repayment from "/assets/images/RepaymentTerms.jpg";
+import childAvatar from "/assets/icons/child.jpeg";
+import manAvatar from "/assets/icons/man.png";
 
 const RepaymentTerms = () => {
   return (
@@ -17,7 +18,6 @@ const RepaymentTerms = () => {
         />
       </div>
 
-      
       <div className="w-full md:w-1/2 space-y-6">
         {/* Heading */}
         <h2 className="text-green-700 uppercase font-semibold text-sm">
@@ -57,10 +57,7 @@ const RepaymentTerms = () => {
             Learn More
           </a>
           <div className="flex items-center space-x-2">
-            {[
-              "../public/assets/icons/child.jpeg",
-              "../public/assets/icons/man.png",
-            ].map((avatar, index) => (
+            {[childAvatar, manAvatar].map((avatar, index) => (
               <img
                 key={index}
                 src={avatar}

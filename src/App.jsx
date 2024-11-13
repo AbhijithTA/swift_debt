@@ -1,9 +1,4 @@
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  useLocation,
-} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
 import Loader from "../components/Loader";
 
@@ -20,7 +15,8 @@ function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const timer = setTimeout(() => setLoading(false), 2000);
+    // Initial loading simulation
+    const timer = setTimeout(() => setLoading(false), 1000);
     return () => clearTimeout(timer);
   }, []);
 
@@ -31,30 +27,22 @@ function App() {
 
   return (
     <Router>
-      <NavBarComponent />
       {loading ? (
         <Loader />
       ) : (
-        <Routes>
-          <Route path="/" element={<HomePage />} onEnter={handleRouteChange} />
-          <Route
-            path="/services"
-            element={<ServicesPage />}
-            onEnter={handleRouteChange}
-          />
-          <Route
-            path="/aboutus"
-            element={<AboutUsPage />}
-            onEnter={handleRouteChange}
-          />
-          <Route
-            path="/contactus"
-            element={<ContactUs />}
-            onEnter={handleRouteChange}
-          />
-        </Routes>
+        <>
+          <NavBarComponent /> {/* Only show NavBar when loading is false */}
+          
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/services" element={<ServicesPage />} />
+            <Route path="/aboutus" element={<AboutUsPage />} />
+            <Route path="/contactus" element={<ContactUs />} />
+          </Routes>
+          
+          <Footer /> 
+        </>
       )}
-      <Footer />
     </Router>
   );
 }

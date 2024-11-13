@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 
-import customerService from "../public/assets/images/CustomerService_grp.jpg";
+import customerService from "/assets/images/CustomerService_grp.jpg";
 
 const CustomerService = () => {
   return (

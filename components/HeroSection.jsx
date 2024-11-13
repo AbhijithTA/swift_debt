@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import { motion } from "framer-motion";
 import { ReactTyped } from "react-typed";
-import man1 from "../public/assets/images/heroSection.jpg";
+import man1 from "/assets/images/heroSection.jpg";
 
 const sentences = [
   "Comprehensive Debt Collection Services Tailored to Your Needs",
@@ -48,7 +48,10 @@ const HeroSection = () => {
         <p className="text-gray-700 mb-6 leading-relaxed">
           Simply fill out the application form and get a decision in minutes.
         </p>
-        <a href="/contactus" className="bg-green-700 text-white font-semibold py-3 px-6 rounded-md hover:bg-green-800 transition duration-300">
+        <a
+          href="/contactus"
+          className="bg-green-700 text-white font-semibold py-3 px-6 rounded-md hover:bg-green-800 transition duration-300"
+        >
           Request Now
         </a>
       </motion.div>
@@ -61,7 +64,12 @@ const HeroSection = () => {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
         >
-          <img src={man1} alt="Service Image" className="w-full h-full object-cover" />
+          <img
+            src={man1}
+            alt="Service Image"
+            className="w-full h-full object-cover "
+            loading="lazy"
+          />
         </motion.div>
       </div>
     </motion.section>

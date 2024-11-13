@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 import { FaFileAlt, FaDollarSign } from "react-icons/fa";
 
 // Import images (replace with actual paths)
-import files from "../public/assets/images/RateComponent_Files.jpg";
-import atm from "../public/assets/images/RateComponent_atm.jpeg";
+import files from "/assets/images/RateComponent_Files.jpg";
+import atm from "/assets/images/RateComponent_atm.jpeg";
 
 const CompetitiveRates = () => {
   return (
