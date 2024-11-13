@@ -53,7 +53,7 @@ const RepaymentTerms = () => {
         </motion.div>
 
         <div className="flex items-center space-x-4">
-          <a href="/services" className="bg-green-700 text-white font-semibold py-2 px-6 rounded-md hover:bg-green-800 transition duration-300">
+          <a href="/aboutus" className="bg-green-700 text-white font-semibold py-2 px-6 rounded-md hover:bg-green-800 transition duration-300">
             Learn More
           </a>
           <div className="flex items-center space-x-2">

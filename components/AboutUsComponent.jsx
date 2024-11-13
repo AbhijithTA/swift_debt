@@ -127,9 +127,9 @@ const AboutUsComponent = () => {
 
       {/* Contact Button */}
       <div className="text-center">
-        <button className="bg-gradient-to-r from-green-500 to-green-700 text-white py-3 px-10 rounded-full text-lg font-semibold hover:from-green-600 hover:to-green-800 transition duration-300">
+        <a  href="/contactus" className="bg-gradient-to-r from-green-500 to-green-700 text-white py-3 px-10 rounded-full text-lg font-semibold hover:from-green-600 hover:to-green-800 transition duration-300">
           Contact Us
-        </button>
+        </a>
       </div>
     </section>
   );

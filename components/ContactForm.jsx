@@ -4,7 +4,9 @@ const ContactUs = () => {
   return (
     <section className="bg-gradient-to-b from-green-50 to-white py-20 px-8">
       <div className="max-w-5xl mx-auto text-center mb-16">
-        <h1 className="md:text-5xl text-3xl  font-bold text-green-700 mb-4">Contact Us</h1>
+        <h1 className="md:text-5xl text-3xl  font-bold text-green-700 mb-4">
+          Contact Us
+        </h1>
         <p className="text-lg text-gray-700 leading-relaxed mb-6">
           At{" "}
           <span className="font-semibold text-green-700">
@@ -44,16 +46,18 @@ const ContactUs = () => {
               Contact Information
             </h2>
             <p className="text-gray-700 leading-relaxed mb-6 text-center">
-              Swift Debt Collection <br />
-              123 Recovery Lane, Suite 400 <br />
-              Debt City, DC 12345 <br />
-              Phone: (123) 456-7890 <br />
+              Business Center, 6th Floor <br />
+              The Meydan Hotel Grandstand <br />
+              Meydan Road, Nad Al Sheba <br />
+              Dubai, United Arab Emirates <br />
+              Phone: 00971 55 1357953 <br />
+              Landline: 00971-45163600 Ext : 8771 <br />
               Email: support@swiftdebtcollection.com
             </p>
           </div>
           <div className="w-full h-64">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345094317!2d144.9537353153186!3d-37.81720997975148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d43f4cfac73%3A0x1f2f2b7ed95d1e84!2sDebt%20Collection%20Office!5e0!3m2!1sen!2sus!4v1619164000000!5m2!1sen!2sus"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3611.412007280312!2d55.30018750000001!3d25.1555625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f69270f5612c3%3A0x2d7e43041843e7d8!2sMeydan%20Free%20Zone!5e0!3m2!1sen!2sin!4v1731490630940!5m2!1sen!2sin"
               width="100%"
               height="100%"
               style={{ border: "0" }}

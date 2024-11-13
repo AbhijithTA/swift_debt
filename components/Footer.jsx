@@ -70,16 +70,7 @@ const Footer = () => {
                   Services
                 </a>
               </li>
-              <li>
-                <a href="#" className="hover:text-yellow-400">
-                  Privacy Policy
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-yellow-400">
-                  Terms of Service
-                </a>
-              </li>
+
               <li>
                 <a href="/contactus" className="hover:text-yellow-400">
                   Contact Us
@@ -103,7 +94,13 @@ const Footer = () => {
               <li className="flex items-center">
                 <FaPhoneAlt className="mr-2" />
                 <a href="tel:+12345678900" className="hover:text-yellow-400">
-                  +1 (123) 456-7890
+                00971 55 1357953
+                </a>
+              </li>
+              <li className="flex items-center">
+                <FaPhoneAlt className="mr-2" />
+                <a href="tel:+12345678900" className="hover:text-yellow-400">
+                00971-45163600 Ext : 8771
                 </a>
               </li>
               <li className="flex items-center">
