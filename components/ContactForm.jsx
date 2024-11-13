@@ -1,5 +1,4 @@
-// replace with an actual image path
-
+import contactus from "../assets/images/contactus.png";
 const ContactUs = () => {
   return (
     <section className="bg-gradient-to-b from-green-50 to-white py-20 px-8">
@@ -24,7 +23,7 @@ const ContactUs = () => {
         <div className="bg-white shadow-lg rounded-lg overflow-hidden border border-gray-200 flex flex-col items-center p-8">
           <div className="w-full mb-6">
             <img
-              src="public\assets\images\contactus.svg"
+              src={contactus}
               alt="Swift Debt Collection Office"
               className="w-full h-64 object-contain rounded-lg shadow-md"
             />
