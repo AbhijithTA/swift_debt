@@ -1,12 +1,7 @@
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  useLocation,
-} from "react-router-dom";
+/* eslint-disable no-unused-vars */
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useState, useEffect } from "react";
 import Loader from "../components/Loader";
-
 import "./App.css";
 import "./index.css";
 import NavBarComponent from "../components/Navbar";
@@ -20,7 +15,6 @@ function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Initial loading simulation
     const timer = setTimeout(() => setLoading(false), 1000);
     return () => clearTimeout(timer);
   }, []);
@@ -43,7 +37,6 @@ function App() {
             <Route path="/aboutus" element={<AboutUsPage />} />
             <Route path="/contactus" element={<ContactUs />} />
           </Routes>
-
           <Footer />
         </>
       )}

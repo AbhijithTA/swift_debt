@@ -46,8 +46,10 @@ const HeroSection = () => {
           />
         </h1>
         <p className="text-gray-700 mb-6 leading-relaxed">
-          Simply fill out the application form and get a decision in minutes.
+          Trusted experts in Debt Collection, Dues Recovery, Legal Collections,
+          and Debt Management Solutions.
         </p>
+
         <a
           href="/contactus"
           className="bg-green-700 text-white font-semibold py-3 px-6 rounded-md hover:bg-green-800 transition duration-300"

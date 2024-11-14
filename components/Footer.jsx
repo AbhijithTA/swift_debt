@@ -5,6 +5,7 @@ import {
   FaYoutube,
   FaLinkedin,
 } from "react-icons/fa";
+import logo from "/assets/images/Logo-01.png"
 
 const Footer = () => {
   return (
@@ -19,7 +20,7 @@ const Footer = () => {
               secure their financial stability.
             </p>
             <a
-              href="#"
+              href="/aboutus"
               className="text-yellow-400 font-semibold flex items-center hover:text-yellow-500"
             >
               Read More <span className="ml-2">&rarr;</span>
@@ -30,27 +31,27 @@ const Footer = () => {
             <h3 className="text-lg font-bold mb-4">Our Services</h3>
             <ul className="text-gray-400 space-y-2">
               <li>
-                <a href="#" className="hover:text-yellow-400">
+                <a href="/services" className="hover:text-yellow-400">
                   Debt Collection
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-yellow-400">
+                <a href="/services" className="hover:text-yellow-400">
                   Pre-Legal Debt Recovery
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-yellow-400">
+                <a href="/services" className="hover:text-yellow-400">
                   Legal Collections
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-yellow-400">
+                <a href="/services" className="hover:text-yellow-400">
                   Cheque Bounce Case Handling
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-yellow-400">
+                <a href="/services" className="hover:text-yellow-400">
                   Debt Management Solutions
                 </a>
               </li>
@@ -127,8 +128,8 @@ const Footer = () => {
 
         <div className="border-t border-gray-700 mt-8 pt-8 flex flex-col md:flex-row items-center justify-between">
           <div className="flex items-center space-x-2">
-            <span className="bg-green-700 text-white p-2 rounded-full">
-              <img src="/path/to/logo.png" alt="Logo" className="h-6 w-6" />
+            <span className="bg-grey-800 text-white p-2 rounded-full">
+              <img src={logo} alt="Logo" className="h-6 w-6" />
             </span>
             <span className="text-white font-semibold">
               Swift Debt Collection

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import logo from "/assets/images/Logo-01.png"
 
 const NavBarComponent = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -8,9 +9,9 @@ const NavBarComponent = () => {
     <nav className="bg-white shadow-md z-50 relative">
       <div className="container mx-auto flex items-center justify-between py-4 px-6 lg:px-12">
         <div className="flex items-center">
-          <div className="bg-yellow-400 rounded-full p-2">
+          <div className="rounded-full p-2 bg-gray-800">
             <a href="/">
-              <img src="/path-to-logo.svg" alt="Logo" className="h-6 w-6" />
+              <img src={logo} alt="Logo" className="h-10 w-10" />
             </a>
           </div>
           <a href="/">
